@@ -1,0 +1,293 @@
+{
+  "SchemaVersion": 1,
+  "Name": null,
+  "Description": null,
+  "Root": {
+    "Guid": "c7dbbc19-f78e-4792-b12a-bfc4d45ae966",
+    "Class": "WeaponBase",
+    "Entities": [],
+    "Components": [
+      {
+        "Guid": "8df3f66a-1c06-4040-a487-2ae792592429",
+        "Class": "SemiAuto",
+        "Keys": {
+          "FireRate": {
+            "Type": "Single",
+            "Value": "1.2"
+          },
+          "ViewmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022fire\u0022"
+          },
+          "WorldmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          },
+          "Trigger": {
+            "Type": "FireTrigger",
+            "Value": "\u0022PrimaryFire\u0022"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/buckshot.ammo\u0022"
+          },
+          "FireSound": {
+            "Type": "SoundEvent",
+            "Value": "\u0022sounds/weapons/shotgun/wpn.mastiff.fire.sound\u0022"
+          },
+          "_name": {
+            "Value": "\u0022Primary Fire\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          },
+          "FirePeriod": {
+            "Type": "Single",
+            "Value": "0.88"
+          },
+          "BulletsPerShot": {
+            "Type": "Single",
+            "Value": "8"
+          },
+          "FireSpread": {
+            "Type": "Single",
+            "Value": "0.3"
+          },
+          "ViewFireParameter": {
+            "Type": "String",
+            "Value": "\u0022fire\u0022"
+          },
+          "WorldFireParameter": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          }
+        }
+      },
+      {
+        "Guid": "e0e48128-367a-464e-b265-133facf45a24",
+        "Class": "Clip",
+        "Keys": {
+          "Capacity": {
+            "Type": "Single",
+            "Value": "8"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/buckshot.ammo\u0022"
+          },
+          "_name": {
+            "Value": "\u0022SingleMagazineComponent\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          },
+          "StartDuration": {
+            "Type": "Single",
+            "Value": "25"
+          },
+          "EndDuration": {
+            "Type": "Single",
+            "Value": "25"
+          },
+          "ReloadPeriod": {
+            "Type": "Single",
+            "Value": "25"
+          },
+          "ViewReloadFinishParameter": {
+            "Type": "String",
+            "Value": "\u0022\u0022"
+          },
+          "WorldReloadFinishParameter": {
+            "Type": "String",
+            "Value": "\u0022\u0022"
+          },
+          "ViewReloadParameter": {
+            "Type": "String",
+            "Value": "\u0022\u0022"
+          },
+          "WorldReloadParameter": {
+            "Type": "String",
+            "Value": "\u0022\u0022"
+          },
+          "RoundsPerChamber": {
+            "Type": "Single",
+            "Value": "25"
+          },
+          "Cancellable": {
+            "Type": "Boolean",
+            "Value": "false"
+          }
+        }
+      },
+      {
+        "Guid": "a267c64a-ddd5-4241-99f9-0bd0026bd428",
+        "Class": "SemiAuto",
+        "Keys": {
+          "FireRate": {
+            "Type": "Single",
+            "Value": "0.5"
+          },
+          "ViewmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022fire_double\u0022"
+          },
+          "WorldmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          },
+          "Trigger": {
+            "Type": "FireTrigger",
+            "Value": "\u0022SecondaryFire\u0022"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/buckshot.ammo\u0022"
+          },
+          "ConsumptionPerShot": {
+            "Type": "Single",
+            "Value": "2"
+          },
+          "FireSound": {
+            "Type": "SoundEvent",
+            "Value": "\u0022sounds/weapons/shotgun/wpn.mastiff.fire.double.sound\u0022"
+          },
+          "_name": {
+            "Value": "\u0022Secondary Fire\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          },
+          "FirePeriod": {
+            "Type": "Single",
+            "Value": "1.03"
+          },
+          "BulletsPerShot": {
+            "Type": "Single",
+            "Value": "11"
+          },
+          "FireSpread": {
+            "Type": "Single",
+            "Value": "0.6"
+          },
+          "ViewFireParameter": {
+            "Type": "String",
+            "Value": "\u0022fire\u0022"
+          },
+          "WorldFireParameter": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          }
+        }
+      },
+      {
+        "Guid": "05cb7cce-182f-494a-8a13-a41192c527ff",
+        "Class": "Chamber",
+        "Keys": {
+          "VMOnReloadFinishedAnimParam": {
+            "Type": "String",
+            "Value": "\u0022reload_finished\u0022"
+          },
+          "ViewmodelAnimation": {
+            "Type": "String",
+            "Value": "\u0022reload\u0022"
+          },
+          "WorldmodelAnimation": {
+            "Type": "String",
+            "Value": "\u0022b_reload\u0022"
+          },
+          "RoundsPerReload": {
+            "Type": "Single",
+            "Value": "1"
+          },
+          "ReloadDuration": {
+            "Type": "Single",
+            "Value": "0.5"
+          },
+          "Cancellable": {
+            "Type": "Boolean",
+            "Value": "false"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/buckshot.ammo\u0022"
+          },
+          "_name": {
+            "Value": "\u0022ReloadIndividual\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          },
+          "StartDuration": {
+            "Type": "Single",
+            "Value": "0"
+          },
+          "EndDuration": {
+            "Type": "Single",
+            "Value": "0.25"
+          },
+          "VMOnReloadStartAnimParam": {
+            "Type": "String",
+            "Value": "\u0022reload_start\u0022"
+          },
+          "ReloadPeriod": {
+            "Type": "Single",
+            "Value": "0.4"
+          },
+          "ViewReloadFinishParameter": {
+            "Type": "String",
+            "Value": "\u0022reload_finished\u0022"
+          },
+          "WorldReloadFinishParameter": {
+            "Type": "String",
+            "Value": "\u0022b_reload\u0022"
+          },
+          "ViewReloadParameter": {
+            "Type": "String",
+            "Value": "\u0022reload\u0022"
+          },
+          "WorldReloadParameter": {
+            "Type": "String",
+            "Value": "\u0022b_reload\u0022"
+          },
+          "RoundsPerChamber": {
+            "Type": "Single",
+            "Value": "1"
+          }
+        }
+      }
+    ],
+    "Keys": {
+      "ViewModelPath": {
+        "Type": "String",
+        "Value": "\u0022weapons/rust_pumpshotgun/v_rust_pumpshotgun.vmdl\u0022"
+      },
+      "ModelPath": {
+        "Type": "String",
+        "Value": "\u0022weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl\u0022"
+      },
+      "_name": {
+        "Value": "\u0022Pump Shotgun\u0022"
+      },
+      "_localposition": {
+        "Value": "\u00220,0,0\u0022"
+      },
+      "_localrotation": {
+        "Value": "\u00220,0,0\u0022"
+      },
+      "_scale": {
+        "Value": "1"
+      },
+      "_tags": {
+        "Value": "\u0022\u0022"
+      },
+      "HolsterDuration": {
+        "Type": "Single",
+        "Value": "0"
+      },
+      "DeployDuration": {
+        "Type": "Single",
+        "Value": "0"
+      }
+    }
+  }
+}

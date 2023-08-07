@@ -1,0 +1,68 @@
+@using Sandbox;
+@using Sandbox.UI;
+
+@namespace Shootbase
+
+@attribute [StyleSheet("/ui/styles.scss")]
+<style>
+	.box {
+		display: flex;
+		position: absolute;
+		bottom: 16px;
+	}
+
+	span {
+		font-family: devgothic;
+		font-weight: 900;
+		image-rendering: trilinear;
+	}
+
+	.glo {
+		text-shadow: 2px 2px 0 #48abe0;
+	}
+
+	.glow-proper {
+		text-shadow: 2px 2px 4px 16px #000;
+	}
+
+	.gap-2 {
+		gap: 2px;
+	}
+</style>
+
+<root class="absolute r-8 b-8">
+	<div class="p-2 w-16 justify-centre">
+		<div class="position-absolute inset-2 blur-frosted" />
+
+		<span class="white glow-proper ftsz-10">@PrimaryAmmoCurrent()</span>
+	</div>
+	<div class="p-1 pt-2 ftsz-4 w-8 justify-centre">
+		<div class="position-absolute bg-gs-2 inset-2" />
+
+		<span class="white">@PrimaryReserveAmmo()</span>
+	</div>
+</root>
+
+@code
+{
+	public Shootbase.Player Player => Game.LocalPawn as Shootbase.Player;
+
+	string PrimaryAmmoCurrent()
+	{
+		Log.Info(Player?.Inventory?.ActiveWeapon?.PrimaryMagRef.GetCurrent());
+		return Player?.Inventory?.ActiveWeapon?.PrimaryMagRef.GetCurrent().ToString("D") ?? "//";
+	}
+
+	string PrimaryReserveAmmo()
+	{
+		return Player?.Inventory?.ActiveWeapon?.PrimaryMagRef.GetCurrent().ToString("D") ?? "//";
+		//return Player?..ActiveWeapon?.PrimaryMagazineSize.ToString("D") ?? "NAN";
+		//return "00";
+	}
+	protected override int BuildHash()
+	{
+		return System.HashCode.Combine(System.DateTime.Now.ToString());
+		return System.HashCode.Combine(Player?.Inventory?.ActiveWeapon, Player?.Inventory?.ActiveWeapon?.PrimaryMagRef?.GetCurrent());
+	}
+
+}

@@ -1,0 +1,229 @@
+{
+  "SchemaVersion": 1,
+  "Name": null,
+  "Description": null,
+  "Root": {
+    "Guid": "8f49dca3-2e1c-444a-84b6-0cb2f271e14e",
+    "Class": "WeaponBase",
+    "Entities": [],
+    "Components": [
+      {
+        "Guid": "3278f224-8694-4cf2-bab8-85304d3e3444",
+        "Class": "Automatic",
+        "Keys": {
+          "FireRate": {
+            "Type": "Single",
+            "Value": "9"
+          },
+          "ViewmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022fire\u0022"
+          },
+          "WorldmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          },
+          "Trigger": {
+            "Type": "FireTrigger",
+            "Value": "\u0022PrimaryFire\u0022"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/9mm.ammo\u0022"
+          },
+          "FireSound": {
+            "Type": "SoundEvent",
+            "Value": "\u0022weapons/rust_smg/sounds/rust_smg.shoot.sound\u0022"
+          },
+          "_name": {
+            "Value": "\u0022Primary Fire\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          },
+          "FirePeriod": {
+            "Type": "Single",
+            "Value": "0.1"
+          },
+          "FireSpread": {
+            "Type": "Single",
+            "Value": "0.12"
+          },
+          "ViewFireParameter": {
+            "Type": "String",
+            "Value": "\u0022fire\u0022"
+          },
+          "WorldFireParameter": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          }
+        }
+      },
+      {
+        "Guid": "e0330098-fbf3-4734-bce0-528334130484",
+        "Class": "Burst",
+        "Keys": {
+          "isAutomatic": {
+            "Type": "Boolean",
+            "Value": "true"
+          },
+          "BurstCount": {
+            "Type": "Single",
+            "Value": "3"
+          },
+          "FireRate": {
+            "Type": "Single",
+            "Value": "20"
+          },
+          "ViewmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022fire\u0022"
+          },
+          "WorldmodelFireAnimation": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          },
+          "Trigger": {
+            "Type": "FireTrigger",
+            "Value": "\u0022SecondaryFire\u0022"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/9mm.ammo\u0022"
+          },
+          "BurstDelay": {
+            "Type": "Single",
+            "Value": "0.33"
+          },
+          "FireSound": {
+            "Type": "SoundEvent",
+            "Value": "\u0022weapons/rust_smg/sounds/rust_smg.shoot.sound\u0022"
+          },
+          "_name": {
+            "Value": "\u0022BurstFireTrait\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          },
+          "FirePeriod": {
+            "Type": "Single",
+            "Value": "0.05"
+          },
+          "FireSpread": {
+            "Type": "Single",
+            "Value": "0.1"
+          },
+          "ViewFireParameter": {
+            "Type": "String",
+            "Value": "\u0022fire\u0022"
+          },
+          "WorldFireParameter": {
+            "Type": "String",
+            "Value": "\u0022b_fire\u0022"
+          }
+        }
+      },
+      {
+        "Guid": "e1e861a6-fbcd-4b29-b0ce-5955788c6683",
+        "Class": "Clip",
+        "Keys": {
+          "Capacity": {
+            "Type": "Single",
+            "Value": "50"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/9mm.ammo\u0022"
+          },
+          "_name": {
+            "Value": "\u0022SingleMagazineComponent\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          }
+        }
+      },
+      {
+        "Guid": "7ea8b7fa-c896-40d3-b97c-16b5e7295698",
+        "Class": "Magload",
+        "Keys": {
+          "ViewmodelAnimation": {
+            "Type": "String",
+            "Value": "\u0022reload\u0022"
+          },
+          "WorldmodelAnimation": {
+            "Type": "String",
+            "Value": "\u0022b_reload\u0022"
+          },
+          "ReloadDuration": {
+            "Type": "Single",
+            "Value": "5.16"
+          },
+          "Cancellable": {
+            "Type": "Boolean",
+            "Value": "false"
+          },
+          "AmmoType": {
+            "Type": "AmmoType",
+            "Value": "\u0022data/ammo/9mm.ammo\u0022"
+          },
+          "_name": {
+            "Value": "\u0022ReloadMagazine\u0022"
+          },
+          "_tags": {
+            "Value": "[]"
+          },
+          "ReloadPeriod": {
+            "Type": "Single",
+            "Value": "3"
+          },
+          "ViewReloadParameter": {
+            "Type": "String",
+            "Value": "\u0022reload\u0022"
+          },
+          "WorldReloadParameter": {
+            "Type": "String",
+            "Value": "\u0022b_reload\u0022"
+          }
+        }
+      }
+    ],
+    "Keys": {
+      "ViewModelPath": {
+        "Type": "String",
+        "Value": "\u0022weapons/rust_smg/v_rust_smg.vmdl\u0022"
+      },
+      "ModelPath": {
+        "Type": "String",
+        "Value": "\u0022weapons/rust_smg/rust_smg.vmdl\u0022"
+      },
+      "HolsterDuration": {
+        "Type": "Single",
+        "Value": "0"
+      },
+      "DeployDuration": {
+        "Type": "Single",
+        "Value": "0"
+      },
+      "Model": {
+        "Type": "Model",
+        "Value": "\u0022weapons/rust_smg/rust_smg.vmdl\u0022"
+      },
+      "_name": {
+        "Value": "\u0022SMG\u0022"
+      },
+      "_localposition": {
+        "Value": "\u00220,0,0\u0022"
+      },
+      "_localrotation": {
+        "Value": "\u00220,0,0\u0022"
+      },
+      "_scale": {
+        "Value": "1"
+      },
+      "_tags": {
+        "Value": "\u0022\u0022"
+      }
+    }
+  }
+}

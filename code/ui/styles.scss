@@ -1,0 +1,325 @@
+$color: red;
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.rounded {
+  border-radius: 16px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-opacity-25 {
+  backdrop-filter: blur(10px) saturate(80%);
+}
+
+.absolute {
+  position: absolute;
+}
+
+// Justify
+
+.justify-centre {
+  justify-content: center;
+}
+
+.position-static {
+  position: static;
+}
+
+.position-absolute {
+  position:absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+
+// Left
+
+.l-2 {
+  left: 16;
+}
+
+.l-4 {
+  left: 32;
+}
+
+.l-6 {
+  left: 48;
+}
+
+.l-8 {
+  left: 64;
+}
+
+// Right
+
+.r-2 {
+  right: 16;
+}
+
+.r-4 {
+  right: 32;
+}
+
+.r-6 {
+  right: 48;
+}
+
+.r-8 {
+  right: 64;
+}
+
+// Top
+
+.t-2 {
+  top: 16;
+}
+
+.t-4 {
+  top: 32;
+}
+
+.t-6 {
+  top: 48;
+}
+
+.t-8 {
+  top: 64;
+}
+
+// Bottom
+
+.b-2 {
+  bottom: 16;
+}
+
+.b-4 {
+  bottom: 32;
+}
+
+.b-6 {
+  bottom: 48;
+}
+
+.b-8 {
+  bottom: 64;
+}
+
+// Padding
+
+.p-1 {
+  padding: 8px;
+}
+
+.p-2 {
+  padding: 16px;
+}
+
+.p-4 {
+  padding: 32px;
+}
+
+.p-6 {
+  padding: 48px;
+}
+
+.p-8 {
+  padding:64px;
+}
+
+// Padding top
+
+.pt-2 {
+  padding-top: 16px;
+}
+
+// Width
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-2 {
+  width:16;
+}
+
+.w-4 {
+  width:32px;
+}
+.w-6 {
+  width: 48px;
+}
+.w-8 {
+  width: 64px;
+}
+
+.w-10 {
+  width: 80px;
+}
+
+.w-12 {
+  width: 96px;
+}
+
+.w-14{
+  width: 112px;
+}
+
+.w-16 {
+  width: 128px;
+}
+
+// Height
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-2 {
+  height:16;
+}
+
+.h-4 {
+  height:32;
+}
+.h-6 {
+  height: 48;
+}
+.h-8 {
+  height: 64;
+}
+
+.h-10 {
+  height: 80;
+}
+
+.h-12 {
+  height: 96;
+}
+
+// Inset ?
+
+.inset-1 {
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+}
+.inset-2 {
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+}
+
+
+
+// Fonts
+
+.ftsz-1 {
+  font-size: 8px;
+}
+
+.ftsz-2 {
+  font-size: 16px;
+}
+
+.ftsz-4 {
+  font-size: 32px;
+}
+
+.ftsz-6 {
+  font-size: 48px;
+}
+.ftsz-8 {
+  font-size:  64px;
+}
+
+.ftsz-10 {
+  font-size: 80px;
+}
+
+.ftsz-12 {
+  font-size: 96px;
+}
+
+
+// Borders
+
+.brd-basic {
+  border: #0b0d12 1px;
+}
+
+.brd-xnone {
+  border: none 2px;
+}
+
+.brd {
+  
+  &.brd-2 {
+    border-width: 2px;
+  }
+  
+  &-none {
+    border: none;
+  }
+}
+
+// Blurs
+
+.blur-frosted {
+  backdrop-filter: blur(4px) saturate(50%);
+}
+
+// Background
+
+.bg-gs-0 {
+  background-color: black;
+}
+
+.bg-gs-1 {
+  background-color: #111;
+}
+
+.bg-gs-2 {
+  background-color: #222;
+}
+
+.bg-gs-3 {
+  background-color: #333;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+
+.white {
+  color: white;
+}

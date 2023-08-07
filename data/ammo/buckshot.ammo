@@ -1,0 +1,7 @@
+{
+  "WorldModel": null,
+  "DisplayName": "buckshot",
+  "LongName": "Buckshot",
+  "DefaultPickupAmount": 0,
+  "MaxAmmo": 2147483647
+}
